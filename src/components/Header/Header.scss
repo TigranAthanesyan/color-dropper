@@ -1,0 +1,43 @@
+.color-dropper-header {
+  width: 100%;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px;
+  box-sizing: border-box;
+
+  &__icon {
+    cursor: pointer;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s ease-in;
+    padding: 0;
+    border: none;
+    background: transparent;
+    outline: none;
+
+    &.active {
+      background-color: #d9d9d9;
+    }
+
+    &:hover {
+      background-color: #d9d9d9;
+    }
+  }
+
+  &__selected-color-hex {
+    font-size: 22px;
+    font-weight: 800;
+  }
+
+  &__selected-color {
+    height: 32px;
+    width: 56px;
+    border-radius: 6px;
+  }
+}
